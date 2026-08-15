@@ -10,3 +10,11 @@ root.render(
   </React.StrictMode>
 );
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
+    navigator.serviceWorker.register(swUrl).catch(() => {
+      // Offline registration failure is fine in local/dev edge cases.
+    });
+  });
+}
