@@ -1,4 +1,4 @@
-/* Offline cache for ABC Checklist — caches assets on first visit. */
+/* Offline cache for ABC Checklist. Caches assets on first visit. */
 const CACHE_NAME = 'abc-checklist-v1';
 
 self.addEventListener('install', (event) => {

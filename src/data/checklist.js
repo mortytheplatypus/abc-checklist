@@ -2,8 +2,8 @@
  * ABC trek checklist, grouped by when you actually use it rather than by the
  * order of the source document (plans/checklist.md).
  *
- * Item ids are stable localStorage keys — renaming a label is safe, renaming
- * an id silently wipes that item's saved state.
+ * Item ids are stable localStorage keys. Renaming a label is safe; renaming an
+ * id silently wipes that item's saved state.
  */
 
 export const phases = [
@@ -25,13 +25,13 @@ export const sections = [
     items: [
       {
         id: 'docs.passport',
-        label: 'Passport — enough validity and blank pages',
+        label: 'Passport with enough validity and blank pages',
       },
       {
         id: 'docs.visa',
         label: 'Nepal visa / visa-on-arrival rule checked for BD passports',
       },
-      { id: 'docs.flights', label: 'Flight tickets — Dhaka to Kathmandu' },
+      { id: 'docs.flights', label: 'Flight tickets, Dhaka to Kathmandu' },
       {
         id: 'docs.copies',
         label: 'Copies of passport, tickets, bookings, emergency contacts',
@@ -48,7 +48,7 @@ export const sections = [
     title: 'Money',
     notes: [
       'Don’t depend entirely on cards.',
-      'For a group of 7–8, one person should keep a shared expense ledger. Otherwise you’ll spend half the trip working out who paid for which jeep.',
+      'For a group of 7-8, one person should keep a shared expense ledger. Otherwise you’ll spend half the trip working out who paid for which jeep.',
     ],
     items: [
       { id: 'money.npr', label: 'NPR cash for the trek' },
@@ -62,14 +62,14 @@ export const sections = [
     phase: 'prep',
     title: 'Book in advance',
     notes: [
-      'The three things not to leave late: the Kathmandu to Pokhara bus for 7–8 people, the Pokhara to trailhead jeep, and permits. Everything else is fixable in Pokhara.',
-      'Book 7–8 bus seats together. Don’t land in Kathmandu hoping there will be enough seats.',
+      'The three things not to leave late: the Kathmandu to Pokhara bus for 7-8 people, the Pokhara to trailhead jeep, and permits. Everything else is fixable in Pokhara.',
+      'Book 7-8 bus seats together. Don’t land in Kathmandu hoping there will be enough seats.',
     ],
     items: [
       { id: 'book.flights', label: 'Dhaka to Kathmandu flights' },
       {
         id: 'book.ktm-pokhara-bus',
-        label: 'Kathmandu to Pokhara night bus — 7–8 seats together',
+        label: 'Kathmandu to Pokhara night bus, 7-8 seats together',
       },
       { id: 'bus.departure', label: 'Bus: departure location confirmed' },
       { id: 'bus.pickup-time', label: 'Bus: pickup time confirmed' },
@@ -99,8 +99,8 @@ export const sections = [
     title: 'Upper body',
     notes: ['Don’t overpack. Layers beat bulk.'],
     items: [
-      { id: 'gear.tshirts', label: '2–3 quick-dry T-shirts' },
-      { id: 'gear.thermals-top', label: '1–2 thermal / base layers' },
+      { id: 'gear.tshirts', label: '2-3 quick-dry T-shirts' },
+      { id: 'gear.thermals-top', label: '1-2 thermal / base layers' },
       { id: 'gear.fleece', label: 'Fleece or mid-layer' },
       { id: 'gear.down-jacket', label: 'Down jacket' },
       { id: 'gear.rain-jacket', label: 'Waterproof rain jacket' },
@@ -128,7 +128,7 @@ export const sections = [
     title: 'Hands, head, feet',
     notes: ['These matter more than people expect.'],
     items: [
-      { id: 'gear.trek-socks', label: '3–4 pairs trekking socks' },
+      { id: 'gear.trek-socks', label: '3-4 pairs trekking socks' },
       { id: 'gear.warm-socks', label: 'Warm wool or synthetic socks' },
       { id: 'gear.warm-gloves', label: 'Warm gloves' },
       { id: 'gear.liner-gloves', label: 'Lightweight liner gloves' },
@@ -145,7 +145,7 @@ export const sections = [
       'Carry blister treatment rather than assuming you won’t need it.',
     ],
     items: [
-      { id: 'gear.boots', label: 'Trekking boots — already broken in' },
+      { id: 'gear.boots', label: 'Trekking boots, already broken in' },
       { id: 'op.gear.sandals', label: 'Sandals for the teahouse' },
       { id: 'gear.extra-socks', label: 'Extra socks' },
       { id: 'gear.blister-treatment', label: 'Blister treatment' },
@@ -174,7 +174,7 @@ export const sections = [
     phase: 'pack',
     title: 'Snacks',
     notes: [
-      'You don’t need six days of food — the teahouses feed you. This is emergency energy only.',
+      'You don’t need six days of food. The teahouses feed you. This is emergency energy only.',
       'Don’t rely on sugary snacks alone. Something salty can be surprisingly useful.',
     ],
     items: [
@@ -199,7 +199,7 @@ export const sections = [
       { id: 'water.bottle', label: 'Bottle or bladder, around 2 L total' },
       {
         id: 'water.purification',
-        label: 'Purification — tablets, drops or filter',
+        label: 'Purification: tablets, drops or filter',
       },
     ],
   },
@@ -246,7 +246,7 @@ export const sections = [
       { id: 'elec.power-bank', label: 'Power bank' },
       { id: 'elec.cables', label: 'Charging cables' },
       { id: 'elec.adapter', label: 'Universal travel adapter' },
-      { id: 'elec.headlamp', label: 'Headlamp — one per person' },
+      { id: 'elec.headlamp', label: 'Headlamp, one per person' },
       { id: 'elec.spare-batteries', label: 'Spare headlamp batteries' },
     ],
   },
@@ -258,7 +258,7 @@ export const sections = [
     title: 'Kathmandu rest day',
     notes: [
       'Don’t turn it into another sightseeing marathon.',
-      'You planned to rent a down jacket and trekking poles. Actually inspect rental gear — don’t just take a bag because the shop says it suits ABC.',
+      'You planned to rent a down jacket and trekking poles. Actually inspect rental gear. Don’t just take a bag because the shop says it suits ABC.',
     ],
     items: [
       { id: 'ktm.hotel', label: 'Check into hotel' },
@@ -289,7 +289,7 @@ export const sections = [
     notes: [],
     items: [
       { id: 'pre.rent', label: 'Rent down jacket and sleeping bag' },
-      { id: 'pre.npr', label: 'Buy NPR — enough for the whole trek' },
+      { id: 'pre.npr', label: 'Buy NPR for the whole trek' },
       { id: 'pre.snacks', label: 'Buy snacks' },
       { id: 'pre.water-electrolytes', label: 'Buy water and electrolytes' },
       { id: 'pre.weather', label: 'Check weather forecast' },
@@ -319,7 +319,7 @@ export const sections = [
     phase: 'trek',
     title: 'Jeep to the trailhead',
     notes: [
-      'For 7–8 people, arrange this before trekking day. Target: Pokhara to the Siwai / Jhinu area, then Chhomrong.',
+      'For 7-8 people, arrange this before trekking day. Target: Pokhara to the Siwai / Jhinu area, then Chhomrong.',
       'Don’t let the driver talk you into changing the plan because some other road is “better”.',
     ],
     items: [
@@ -384,7 +384,7 @@ export const sections = [
     phase: 'info',
     title: 'Don’t chase the itinerary',
     notes: [
-      'The mountains don’t care about your schedule. If someone gets sick, the weather turns, a road is blocked, the group is exhausted, or the trail is bad — change the plan.',
+      'The mountains don’t care about your schedule. If someone gets sick, the weather turns, a road is blocked, the group is exhausted, or the trail is bad, change the plan.',
       'The goal is not "we reach ABC on Day 6". The goal is "everyone reaches ABC safely".',
     ],
     items: [],
@@ -404,8 +404,8 @@ export const sections = [
     phase: 'info',
     title: 'Daily routine',
     notes: [
-      '6:00–6:30 wake up. 6:30–7:00 breakfast. 7:00–8:00 start walking.',
-      'Short break every 60–90 minutes. Lunch around midday.',
+      '6:00 to 6:30 wake up. 6:30 to 7:00 breakfast. 7:00 to 8:00 start walking.',
+      'Short break every 60 to 90 minutes. Lunch around midday.',
       'Reach the destination early enough to actually get a room.',
       'Evening: eat, shower if possible, charge devices, prepare the backpack, sleep early.',
       'Don’t turn the teahouse into a late-night hangout. Your next morning matters more.',
