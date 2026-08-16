@@ -31,7 +31,7 @@ export const sections = [
         id: 'docs.visa',
         label: 'Nepal visa / visa-on-arrival rule checked for BD passports',
       },
-      { id: 'docs.flights', label: 'Flight tickets, Dhaka to Kathmandu' },
+      { id: 'docs.flights', label: 'Flight tickets, Dhaka to Kathmandu (26 and 27 Sept)' },
       {
         id: 'docs.copies',
         label: 'Copies of passport, tickets, bookings, emergency contacts',
@@ -62,20 +62,31 @@ export const sections = [
     phase: 'prep',
     title: 'Book in advance',
     notes: [
-      'The three things not to leave late: the Kathmandu to Pokhara bus for 7-8 people, the Pokhara to trailhead jeep, and permits. Everything else is fixable in Pokhara.',
-      'Book 7-8 bus seats together. Don’t land in Kathmandu hoping there will be enough seats.',
+      'Two people land 26 Sept. The rest land 27 Sept afternoon. The advance party buys the 27th-night bus tickets in Kathmandu. Don’t wait until the full group arrives.',
+      'You are not staying in a Pokhara hotel. 28 Sept is a look at the lake, then direct to Ghandruk to rest. Trek starts 29 Sept from Ghandruk.',
+      'The three things not to leave late: the Kathmandu hotel for two on 26 Sept, the Pokhara to Ghandruk jeep for the 28th, and permits.',
     ],
     items: [
-      { id: 'book.flights', label: 'Dhaka to Kathmandu flights' },
+      {
+        id: 'book.flights',
+        label: 'Dhaka to Kathmandu flights (two on 26 Sept, rest on 27 Sept)',
+      },
+      {
+        id: 'book.ktm-hotel-advance',
+        label: 'Kathmandu hotel for two, 26 Sept night',
+      },
       {
         id: 'book.ktm-pokhara-bus',
-        label: 'Kathmandu to Pokhara night bus, 7-8 seats together',
+        label: 'Kathmandu to Pokhara night bus, 27 Sept, whole group',
       },
       { id: 'bus.departure', label: 'Bus: departure location confirmed' },
       { id: 'bus.pickup-time', label: 'Bus: pickup time confirmed' },
       { id: 'bus.luggage', label: 'Bus: luggage allowance confirmed' },
       { id: 'bus.operator-phone', label: 'Bus: operator’s phone number saved' },
-      { id: 'book.pokhara-hotel', label: 'Pokhara hotel' },
+      {
+        id: 'book.ghandruk-jeep',
+        label: 'Pokhara to Ghandruk jeep arranged for 28 Sept',
+      },
       { id: 'book.ktm-return-hotel', label: 'Return Kathmandu hotel' },
     ],
   },
@@ -255,48 +266,77 @@ export const sections = [
   {
     id: 'kathmandu',
     phase: 'trek',
-    title: 'Kathmandu rest day',
+    title: '26 Sept, Kathmandu (two people)',
     notes: [
-      'Don’t turn it into another sightseeing marathon.',
-      'You planned to rent a down jacket and trekking poles. Actually inspect rental gear. Don’t just take a bag because the shop says it suits ABC.',
+      'This is not a sightseeing day. The two who land early do the group’s errands so the 27th can be a clean join-and-go.',
+      'You planned to rent a down jacket, sleeping bag and trekking poles. Actually inspect rental gear. Don’t just take a bag because the shop says it suits ABC.',
     ],
     items: [
-      { id: 'ktm.hotel', label: 'Check into hotel' },
-      { id: 'ktm.rent-gear', label: 'Rent trekking equipment' },
+      { id: 'ktm.hotel', label: 'Check into hotel (two people, one night)' },
+      { id: 'ktm.withdraw-npr', label: 'Exchange currency / withdraw enough NPR' },
+      { id: 'ktm.rent-gear', label: 'Rent trekking equipment, then inspect it' },
       { id: 'ktm.supplies', label: 'Buy remaining supplies' },
-      { id: 'ktm.withdraw-npr', label: 'Withdraw enough NPR' },
+      {
+        id: 'ktm.bus-tickets',
+        label: 'Buy night-bus tickets for the whole group, 27 Sept',
+      },
+      {
+        id: 'ktm.permits',
+        label: 'Start permits / trek registration if you can in Kathmandu',
+      },
+      {
+        id: 'ktm.arrange-jeep',
+        label: 'Arrange Pokhara to Ghandruk jeep for the 28th',
+      },
       { id: 'ktm.charge', label: 'Charge everything' },
     ],
   },
   {
-    id: 'permits',
+    id: 'join',
     phase: 'trek',
-    title: 'Permits',
+    title: '27 Sept, group joins',
     notes: [
-      'You’ll generally need the Annapurna Conservation Area permit (ACAP) plus the trekking registration / TIMS arrangement that applies at the time.',
+      'The rest of the group lands Kathmandu in the afternoon. No extra Kathmandu hotel: go onto the night bus together.',
     ],
     items: [
-      { id: 'permits.acap', label: 'ACAP permit' },
-      { id: 'permits.tims', label: 'TIMS / trek registration' },
-      { id: 'permits.photos', label: 'Photos of every permit saved on phone' },
-      { id: 'permits.passport-handy', label: 'Passport kept handy' },
+      {
+        id: 'join.land',
+        label: 'Remaining group lands Kathmandu in the afternoon',
+      },
+      {
+        id: 'join.meeting',
+        label: 'Meeting point, tickets and passports confirmed',
+      },
+      {
+        id: 'join.bus',
+        label: 'Whole group on the 27 Sept night bus to Pokhara',
+      },
     ],
   },
   {
     id: 'pre-trek',
     phase: 'trek',
-    title: 'Last day in Pokhara',
-    notes: [],
+    title: '28 Sept, Pokhara to Ghandruk',
+    notes: [
+      'You are not staying in a Pokhara hotel. Mild lake look, then direct to Ghandruk. Rest. Trek starts 29 Sept from Ghandruk.',
+    ],
     items: [
-      { id: 'pre.rent', label: 'Rent down jacket and sleeping bag' },
-      { id: 'pre.npr', label: 'Buy NPR for the whole trek' },
-      { id: 'pre.snacks', label: 'Buy snacks' },
-      { id: 'pre.water-electrolytes', label: 'Buy water and electrolytes' },
-      { id: 'pre.weather', label: 'Check weather forecast' },
-      { id: 'pre.charge', label: 'Charge power banks' },
+      { id: 'day28.arrive', label: 'Arrive Pokhara (morning, after the night bus)' },
+      {
+        id: 'day28.lake',
+        label: 'Phewa Lake, mild sightseeing, not a full day',
+      },
+      { id: 'day28.jeep', label: 'Jeep to Ghandruk' },
+      { id: 'day28.teahouse', label: 'Check into a Ghandruk teahouse' },
+      { id: 'day28.rest', label: 'Rest. Trek starts 29 Sept from Ghandruk' },
+      { id: 'pre.npr', label: 'NPR for the whole trek confirmed' },
+      { id: 'pre.snacks', label: 'Snacks bought' },
+      { id: 'pre.water-electrolytes', label: 'Water and electrolytes bought' },
+      { id: 'pre.weather', label: 'Weather forecast checked' },
+      { id: 'pre.charge', label: 'Power banks charged' },
       {
         id: 'pre.passports-permits',
-        label: 'Confirm everyone’s passport and permit situation',
+        label: 'Everyone’s passport and permit situation confirmed',
       },
     ],
   },
@@ -305,21 +345,21 @@ export const sections = [
     phase: 'trek',
     title: 'Offline maps',
     notes: [
-      'Do this before leaving Pokhara. Don’t assume you’ll have reliable mobile data.',
+      'Do this in Kathmandu on the 26th, or on the 28th before the jeep. You are not staying in Pokhara. Don’t assume you’ll have reliable mobile data.',
     ],
     items: [
       { id: 'maps.offline-route', label: 'Offline map of the entire ABC route' },
       { id: 'maps.teahouses', label: 'Teahouse destinations saved' },
-      { id: 'maps.pokhara-hotel', label: 'Pokhara hotel saved' },
+      { id: 'maps.ghandruk', label: 'Ghandruk saved (first night, 28 Sept)' },
       { id: 'maps.jeep-locations', label: 'Jeep pickup and drop-off saved' },
     ],
   },
   {
     id: 'jeep',
     phase: 'trek',
-    title: 'Jeep to the trailhead',
+    title: 'Jeep to Ghandruk',
     notes: [
-      'For 7-8 people, arrange this before trekking day. Target: Pokhara to the Siwai / Jhinu area, then Chhomrong.',
+      'For 7-8 people, arrange this before the 28th. Target: Pokhara to Ghandruk. Don’t land in Pokhara and start hunting for a vehicle.',
       'Don’t let the driver talk you into changing the plan because some other road is “better”.',
     ],
     items: [
@@ -329,8 +369,22 @@ export const sections = [
       { id: 'jeep.price', label: 'Total price' },
       { id: 'jeep.pickup-location', label: 'Pickup location' },
       { id: 'jeep.pickup-time', label: 'Pickup time' },
-      { id: 'jeep.dropoff', label: 'Exact drop-off point' },
+      { id: 'jeep.dropoff', label: 'Drop-off: Ghandruk' },
       { id: 'jeep.road-charges', label: 'Road and parking charges included?' },
+    ],
+  },
+  {
+    id: 'permits',
+    phase: 'trek',
+    title: 'Permits',
+    notes: [
+      'You’ll generally need the Annapurna Conservation Area permit (ACAP) plus the trekking registration / TIMS arrangement that applies at the time. Start these in Kathmandu on the 26th if you can. Don’t leave them for Pokhara; you are not staying there.',
+    ],
+    items: [
+      { id: 'permits.acap', label: 'ACAP permit' },
+      { id: 'permits.tims', label: 'TIMS / trek registration' },
+      { id: 'permits.photos', label: 'Photos of every permit saved on phone' },
+      { id: 'permits.passport-handy', label: 'Passport kept handy' },
     ],
   },
   {
@@ -368,6 +422,18 @@ export const sections = [
   },
 
   // ---------------------------------------------------------------- INFO
+  {
+    id: 'itinerary',
+    phase: 'info',
+    title: 'Itinerary',
+    notes: [
+      '26 Sept: two people land Kathmandu. Hotel for two, one night. Exchange currency, rent gear, buy Kathmandu to Pokhara night-bus tickets for the whole group (27th night).',
+      '27 Sept: remaining group lands Kathmandu in the afternoon. Whole group takes the night bus to Pokhara.',
+      '28 Sept: arrive Pokhara, mild look at Phewa Lake, go direct to Ghandruk. No Pokhara hotel. Rest.',
+      '29 Sept: trek begins from Ghandruk. After that, the trail plan is unchanged.',
+    ],
+    items: [],
+  },
   {
     id: 'altitude',
     phase: 'info',
