@@ -4,6 +4,8 @@ import { Row } from './Row';
 export function Group({ section, hideDone, isChecked, onToggle, onResetSection }) {
   const [showNotes, setShowNotes] = useState(false);
 
+  const notes = section.notes || [];
+  const tables = section.tables || (section.table ? [section.table] : null);
   const total = section.items.length;
   const done = section.items.filter((item) => isChecked(item.id)).length;
   const complete = total > 0 && done === total;
@@ -12,6 +14,8 @@ export function Group({ section, hideDone, isChecked, onToggle, onResetSection }
     : section.items;
 
   if (hideDone && complete) return null;
+
+  const showNotesBlock = (showNotes || total === 0) && notes.length > 0;
 
   return (
     <section className={section.urgent ? 'group urgent' : 'group'}>
@@ -34,7 +38,7 @@ export function Group({ section, hideDone, isChecked, onToggle, onResetSection }
           </button>
         )}
 
-        {section.notes.length > 0 && total > 0 && (
+        {notes.length > 0 && total > 0 && (
           <button
             type="button"
             className={showNotes ? 'chip chip-on' : 'chip'}
@@ -46,9 +50,33 @@ export function Group({ section, hideDone, isChecked, onToggle, onResetSection }
         )}
       </div>
 
-      {(showNotes || total === 0) && section.notes.length > 0 && (
+      {tables &&
+        tables.map((table, ti) => (
+          <div key={ti} className="info-table-wrap">
+            <table className="info-table">
+              <thead>
+                <tr>
+                  {table.headers.map((header) => (
+                    <th key={header}>{header}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {table.rows.map((row, i) => (
+                  <tr key={i}>
+                    {row.map((cell, j) => (
+                      <td key={j}>{cell}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+
+      {showNotesBlock && (
         <ul className="notes">
-          {section.notes.map((note, i) => (
+          {notes.map((note, i) => (
             <li key={i}>{note}</li>
           ))}
         </ul>

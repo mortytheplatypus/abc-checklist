@@ -7,9 +7,9 @@
  */
 
 export const phases = [
-  { id: 'prep', label: 'Prep', hint: 'Before you leave Bangladesh' },
+  { id: 'prep', label: 'Prep', hint: 'Before and on arrival' },
   { id: 'pack', label: 'Pack', hint: 'What goes in the bag' },
-  { id: 'trek', label: 'Trek', hint: 'On the ground in Nepal' },
+  { id: 'trek', label: 'Trek', hint: 'Day-by-day on the trail' },
   { id: 'info', label: 'Info', hint: 'Read when you need it' },
 ];
 
@@ -262,10 +262,10 @@ export const sections = [
     ],
   },
 
-  // ---------------------------------------------------------------- TREK
+  // ---------------------------------------------------------- LOGISTICS (Prep)
   {
     id: 'kathmandu',
-    phase: 'trek',
+    phase: 'prep',
     title: '26 Sept, Kathmandu (two people)',
     notes: [
       'This is not a sightseeing day. The two who land early do the group’s errands so the 27th can be a clean join-and-go.',
@@ -293,7 +293,7 @@ export const sections = [
   },
   {
     id: 'join',
-    phase: 'trek',
+    phase: 'prep',
     title: '27 Sept, group joins',
     notes: [
       'The rest of the group lands Kathmandu in the afternoon. No extra Kathmandu hotel: go onto the night bus together.',
@@ -315,7 +315,7 @@ export const sections = [
   },
   {
     id: 'pre-trek',
-    phase: 'trek',
+    phase: 'prep',
     title: '28 Sept, Pokhara to Ghandruk',
     notes: [
       'You are not staying in a Pokhara hotel. Mild lake look, then direct to Ghandruk. Rest. Trek starts 29 Sept from Ghandruk.',
@@ -342,7 +342,7 @@ export const sections = [
   },
   {
     id: 'maps',
-    phase: 'trek',
+    phase: 'prep',
     title: 'Offline maps',
     notes: [
       'Do this in Kathmandu on the 26th, or on the 28th before the jeep. You are not staying in Pokhara. Don’t assume you’ll have reliable mobile data.',
@@ -356,7 +356,7 @@ export const sections = [
   },
   {
     id: 'jeep',
-    phase: 'trek',
+    phase: 'prep',
     title: 'Jeep to Ghandruk',
     notes: [
       'For 7-8 people, arrange this before the 28th. Target: Pokhara to Ghandruk. Don’t land in Pokhara and start hunting for a vehicle.',
@@ -375,7 +375,7 @@ export const sections = [
   },
   {
     id: 'permits',
-    phase: 'trek',
+    phase: 'prep',
     title: 'Permits',
     notes: [
       'You’ll generally need the Annapurna Conservation Area permit (ACAP) plus the trekking registration / TIMS arrangement that applies at the time. Start these in Kathmandu on the 26th if you can. Don’t leave them for Pokhara; you are not staying there.',
@@ -389,7 +389,7 @@ export const sections = [
   },
   {
     id: 'cash',
-    phase: 'trek',
+    phase: 'prep',
     title: 'Cash on the trail',
     notes: [
       'ATMs become irrelevant once you’re deep into the trail. Don’t plan to withdraw money when you need it.',
@@ -401,7 +401,7 @@ export const sections = [
   },
   {
     id: 'morning',
-    phase: 'trek',
+    phase: 'prep',
     title: 'Every morning',
     daily: true,
     notes: [
@@ -423,26 +423,47 @@ export const sections = [
 
   // ---------------------------------------------------------------- INFO
   {
-    id: 'itinerary',
+    id: 'altitude',
     phase: 'info',
-    title: 'Itinerary',
+    title: 'Altitude illness',
+    urgent: true,
     notes: [
-      '26 Sept: two people land Kathmandu. Hotel for two, one night. Exchange currency, rent gear, buy Kathmandu to Pokhara night-bus tickets for the whole group (27th night).',
-      '27 Sept: remaining group lands Kathmandu in the afternoon. Whole group takes the night bus to Pokhara.',
-      '28 Sept: arrive Pokhara, mild look at Phewa Lake, go direct to Ghandruk. No Pokhara hotel. Rest.',
-      '29 Sept: trek begins from Ghandruk. After that, the trail plan is unchanged.',
+      'ABC sits around 4,130 m. Sleeping at MBC (~3,700 m) is already a big jump. Watch for: persistent headache, nausea, dizziness, unusual fatigue, difficulty sleeping, loss of coordination, shortness of breath at rest.',
+      'Do not treat worsening symptoms as something to push through. Descending is the treatment for serious altitude illness. Tell the guide immediately.',
     ],
     items: [],
   },
   {
-    id: 'altitude',
+    id: 'hardest',
     phase: 'info',
-    title: 'Altitude',
-    urgent: true,
-    notes: [
-      'ABC sits around 4,130 m. Watch for: persistent headache, nausea, dizziness, unusual fatigue, difficulty sleeping, loss of coordination, shortness of breath at rest.',
-      'Do not treat worsening symptoms as something to push through. Descending is the treatment for serious altitude illness.',
-    ],
+    title: 'Hardest days',
+    table: {
+      headers: ['Day', 'Why'],
+      rows: [
+        ['Oct 1', 'Biggest net gain; altitude transition (Dovan → MBC)'],
+        ['Oct 2', 'Highest altitude; long descent to Dovan'],
+        ['Sep 30', 'Repeated stairs and forest climbs'],
+      ],
+    },
+    notes: [],
+    items: [],
+  },
+  {
+    id: 'checkpoints',
+    phase: 'info',
+    title: 'Trail checkpoints',
+    table: {
+      headers: ['Place', 'Role'],
+      rows: [
+        ['Chomrong', 'Last major village; supplies, eat, rest'],
+        ['Bamboo', 'Forest rest / lunch toward Dovan'],
+        ['Himalaya', 'Tea/rest before Deurali'],
+        ['Deurali', 'Lunch before open high section'],
+        ['MBC', 'High overnight; ABC-day recovery lunch'],
+        ['ABC', 'Highest point ~4,130 m; visit and return'],
+      ],
+    },
+    notes: [],
     items: [],
   },
   {
@@ -451,7 +472,7 @@ export const sections = [
     title: 'Don’t chase the itinerary',
     notes: [
       'The mountains don’t care about your schedule. If someone gets sick, the weather turns, a road is blocked, the group is exhausted, or the trail is bad, change the plan.',
-      'The goal is not "we reach ABC on Day 6". The goal is "everyone reaches ABC safely".',
+      'The goal is not "we reach ABC on Day 5". The goal is "everyone reaches ABC safely".',
     ],
     items: [],
   },
@@ -460,8 +481,14 @@ export const sections = [
     phase: 'info',
     title: 'Group rules',
     notes: [
-      'Nobody walks alone, especially above Deurali.',
-      'If someone is slower, the group adapts rather than splitting into random individuals.',
+      'Start early: aim for 7–8 AM on regular days; earlier on October 2.',
+      'The slowest person sets the pace. Nobody walks alone, especially above Deurali. Do not split without a plan.',
+      'Carry at least 1.5–2 L water per person; refill at lodges. Eat breakfast before walking; lunch at recommended lodges; carry snacks.',
+      'Stairs: small steps, steady pace. Don’t sprint uphill.',
+      'If you feel sick, tell the guide immediately. Do not hide symptoms.',
+      'Ask the guide every morning about rain, snow, trail conditions, and visibility.',
+      'Headlamp for October 2 — you may finish after dark. Keep rain gear and cold layers (gloves, beanie) accessible, not buried.',
+      'Keep enough NPR for food, water, rooms, and emergencies.',
     ],
     items: [],
   },
@@ -485,6 +512,51 @@ export const sections = [
     notes: [
       'Basic rooms, often shared bathrooms, cold rooms higher up. Hot showers, charging and Wi-Fi are sometimes available and usually cost extra.',
       'At higher elevations the dining room is often the warmest place, because that’s where the stove is.',
+    ],
+    items: [],
+  },
+  {
+    id: 'mental-map',
+    phase: 'info',
+    title: 'Final mental map',
+    notes: [
+      'You are not walking a flat road.',
+      'Village ridge → river valleys → forest stairs → high alpine basin → ABC → retrace your steps → hot springs → Pokhara.',
+      'Main physical challenge: stairs plus altitude. Main planning challenge: October 2 — reach ABC early, return to MBC, eat, then descend to Dovan without rushing.',
+      'Prepare for warm, wet lower trails and freezing high-altitude nights.',
+    ],
+    items: [],
+  },
+  {
+    id: 'elev-temp',
+    phase: 'info',
+    title: 'Elevation & temperature',
+    tables: [
+      {
+        headers: ['Stop', 'Elev', 'Next ↑'],
+        rows: [
+          ['Ghandruk', '~1,940 m', '+230 m'],
+          ['Chomrong', '~2,170 m', '+430 m'],
+          ['Dovan', '~2,600 m', '+600 m'],
+          ['Deurali', '~3,200 m', '+500 m'],
+          ['MBC', '~3,700 m', '+430 m'],
+          ['ABC', '~4,130 m', '—'],
+        ],
+      },
+      {
+        headers: ['Day', 'Route', 'Net elev', 'Temp'],
+        rows: [
+          ['Sep 28', 'Pokhara → Ghandruk', '+1,120 m road', 'Night ~10–13°C'],
+          ['Sep 29', 'Ghandruk → Chomrong', '+230 m', '18–24° / 10–13°'],
+          ['Sep 30', 'Chomrong → Dovan', '+430 m', '15–20° / 8–12°'],
+          ['Oct 1', 'Dovan → MBC', '+1,100 m', '5–10° / −5–2°'],
+          ['Oct 2', 'MBC → ABC → Dovan', '+430 m to ABC', '5–10°; coldest'],
+          ['Oct 3', 'Dovan → Pokhara', '−820 m walk', 'Warms to 25–30°'],
+        ],
+      },
+    ],
+    notes: [
+      'Net elevation gain is not the same as total uphill climbing. Temps and rain % are planning estimates — check the forecast around Sep 23–25 and every morning on trail.',
     ],
     items: [],
   },

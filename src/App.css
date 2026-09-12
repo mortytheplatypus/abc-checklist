@@ -139,6 +139,145 @@
   margin-top: 0.5rem;
 }
 
+.info-table-wrap {
+  margin: 0.35rem 0 0.75rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.info-table th,
+.info-table td {
+  padding: 0.55rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.info-table th {
+  background: #ebebeb;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #444;
+  white-space: nowrap;
+}
+
+.info-table td:first-child {
+  font-weight: 600;
+  color: #111;
+  white-space: nowrap;
+}
+
+.info-table td:last-child {
+  font-variant-numeric: tabular-nums;
+}
+
+.info-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.detail-rows {
+  list-style: none;
+  margin: 0.35rem 0 0.75rem;
+  padding: 0;
+}
+
+.detail-row {
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+}
+
+.detail-row:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.detail-row-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  border: none;
+  background: #ebebeb;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.detail-row-head:active {
+  background: #e0e0e0;
+}
+
+.detail-row-titles {
+  min-width: 0;
+  flex: 1;
+}
+
+.detail-row-title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.detail-row-subtitle {
+  margin: 0.2rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: #444;
+}
+
+.detail-row-chevron {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #888;
+  line-height: 1.2;
+}
+
+.detail-row-fields {
+  margin: 0;
+  padding: 0.15rem 0.75rem 0.55rem;
+}
+
+.detail-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.detail-field:first-child {
+  border-top: none;
+}
+
+.detail-field dt {
+  flex-shrink: 0;
+  font-weight: 600;
+  color: #666;
+  min-width: 4.5rem;
+}
+
+.detail-field dd {
+  margin: 0;
+  text-align: right;
+  color: #111;
+}
+
 /* -------------------------------------------------------------------- rows */
 
 .rows {
@@ -246,6 +385,260 @@
   line-height: 1.5;
   color: #888;
   text-align: center;
+}
+
+/* --------------------------------------------------------------- day guide */
+
+.trek-intro {
+  margin: 0;
+  padding: 0.9rem 1rem 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #666;
+}
+
+.day-guide {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.day-guide.urgent {
+  border-left: 4px solid #111;
+}
+
+.day-guide-head {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 1rem 1rem 0.85rem;
+  border: none;
+  background: #f2f2f2;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.day-guide-head:active {
+  background: #e8e8e8;
+}
+
+.day-guide-titles {
+  min-width: 0;
+}
+
+.day-guide-title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #111;
+}
+
+.day-guide-route {
+  margin: 0.25rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #111;
+}
+
+.day-guide-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+}
+
+.day-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+  color: #444;
+}
+
+.day-sleep {
+  flex: 1;
+  min-width: 6rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.day-chevron {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #888;
+  line-height: 1;
+}
+
+.day-guide-body {
+  padding: 0 1rem 1.1rem;
+}
+
+.day-summary {
+  margin: 0 0 0.85rem;
+  padding: 0.15rem 0.75rem 0.55rem;
+  background: #f4f4f4;
+  border-left: 3px solid #111;
+}
+
+.day-summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  border-top: 1px solid #e6e6e6;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.day-summary-row:first-child {
+  border-top: none;
+}
+
+.day-summary-row dt {
+  flex-shrink: 0;
+  font-weight: 600;
+  color: #666;
+  min-width: 4.5rem;
+}
+
+.day-summary-row dd {
+  margin: 0;
+  text-align: right;
+  color: #111;
+}
+
+.day-stats {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.day-elev {
+  margin: 0 0 0.85rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #666;
+}
+
+.day-subhead {
+  margin: 0.85rem 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+}
+
+.day-path {
+  margin: 0 0 0.5rem;
+  padding: 0.55rem 0.7rem;
+  background: #f4f4f4;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #444;
+  word-break: break-word;
+}
+
+.day-list {
+  margin: 0;
+  padding: 0 0 0 1.15rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+.day-list li + li {
+  margin-top: 0.4rem;
+}
+
+.day-rests {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.day-rests li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.day-rests li:first-child {
+  border-top: none;
+  padding-top: 0.15rem;
+}
+
+.day-rests strong {
+  font-size: 0.85rem;
+  color: #111;
+}
+
+.day-rests span {
+  color: #555;
+}
+
+.day-weather {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.day-weather li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.85rem;
+}
+
+.day-weather li:first-child {
+  border-top: none;
+}
+
+.day-weather li span:last-child {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #111;
+  text-align: right;
+}
+
+.day-tip {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+.day-critical {
+  margin-top: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  background: #f4f4f4;
+  border-left: 3px solid #111;
+}
+
+.day-critical .day-subhead {
+  margin-top: 0;
+  color: #111;
+}
+
+.day-critical p {
+  margin: 0.25rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #333;
 }
 
 /* -------------------------------------------------------------------- tabs */

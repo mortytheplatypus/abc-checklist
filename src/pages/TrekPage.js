@@ -1,16 +1,12 @@
-import { getSectionsForPhase } from '../data/checklist';
-import { SectionList } from '../components/SectionList';
+import { trekDays } from '../data/trekDays';
+import { DayGuide } from '../components/DayGuide';
 
-export function TrekPage({ hideDone, isChecked, onToggle, onResetSection }) {
+export function TrekPage() {
   return (
     <main className="main">
-      <SectionList
-        sections={getSectionsForPhase('trek')}
-        hideDone={hideDone}
-        isChecked={isChecked}
-        onToggle={onToggle}
-        onResetSection={onResetSection}
-      />
+      {trekDays.map((day, i) => (
+        <DayGuide key={day.id} day={day} defaultOpen={i === 0} />
+      ))}
     </main>
   );
 }
