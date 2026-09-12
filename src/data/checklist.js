@@ -143,9 +143,8 @@ export const sections = [
       { id: 'gear.warm-socks', label: 'Warm wool or synthetic socks' },
       { id: 'gear.warm-gloves', label: 'Warm gloves' },
       { id: 'gear.liner-gloves', label: 'Lightweight liner gloves' },
-      { id: 'gear.beanie', label: 'Warm beanie' },
+      { id: 'gear.beanie', label: 'Warm beanie, buff/neck gaiter' },
       { id: 'gear.sun-hat', label: 'Sun hat or cap' },
-      { id: 'gear.buff', label: 'Buff / neck gaiter' },
     ],
   },
   {
@@ -153,12 +152,10 @@ export const sections = [
     phase: 'pack',
     title: 'Footwear',
     notes: [
-      'Carry blister treatment rather than assuming you won’t need it.',
+      'Carry blister treatment rather than assuming you won\'t need it.',
     ],
     items: [
       { id: 'gear.boots', label: 'Trekking boots, already broken in' },
-      { id: 'op.gear.sandals', label: 'Sandals for the teahouse' },
-      { id: 'gear.extra-socks', label: 'Extra socks' },
       { id: 'gear.blister-treatment', label: 'Blister treatment' },
     ],
   },
@@ -171,12 +168,8 @@ export const sections = [
       'Use waterproof bags for passport, phone, power bank, wallet, electronics and spare clothes. A cheap plastic bag can save your electronics.',
     ],
     items: [
-      { id: 'op.gear.backpack', label: 'Backpack' },
-      { id: 'rain.pack-cover', label: 'Backpack rain cover' },
-      { id: 'rain.jacket', label: 'Waterproof rain jacket packed on top' },
+      { id: 'op.gear.backpack', label: 'Backpack with rain cover' },
       { id: 'rain.dry-bags', label: 'Dry bags / waterproof bags' },
-      { id: 'rain.ziplocks', label: 'Ziplock bags' },
-      { id: 'op.gear.sleeping-bag', label: 'Sleeping bag' },
       { id: 'op.gear.poles', label: 'Trekking poles' },
     ],
   },
@@ -185,14 +178,12 @@ export const sections = [
     phase: 'pack',
     title: 'Snacks',
     notes: [
-      'You don’t need six days of food. The teahouses feed you. This is emergency energy only.',
-      'Don’t rely on sugary snacks alone. Something salty can be surprisingly useful.',
+      'This is emergency energy only. Do not rely on sugary snacks alone. Something salty can be surprisingly useful.',
     ],
     items: [
       { id: 'food.chocolate', label: 'Chocolate' },
-      { id: 'food.dates', label: 'Dates' },
-      { id: 'food.nuts', label: 'Nuts and dry fruit' },
-      { id: 'food.energy-bars', label: 'Energy bars' },
+      { id: 'food.dates', label: 'Dates, nuts and dry fruit' },
+      { id: 'food.energy-bars', label: 'Milk powder and Energy bars' },
       { id: 'food.biscuits', label: 'Biscuits' },
       { id: 'food.ors', label: 'Electrolyte / ORS packets' },
       { id: 'food.salty', label: 'Some salty snacks' },
@@ -204,7 +195,7 @@ export const sections = [
     title: 'Water',
     notes: [
       'Aim for roughly 2 litres of carrying capacity per person. You can refill along the trail.',
-      'Don’t assume a source is safe just because locals drink from it.',
+      'Do not assume a source is safe just because locals drink from it.',
     ],
     items: [
       { id: 'water.bottle', label: 'Bottle or bladder, around 2 L total' },
@@ -250,7 +241,7 @@ export const sections = [
     phase: 'pack',
     title: 'Electronics',
     notes: [
-      'Don’t rely on your phone flashlight. You may walk before sunrise or after dark if something goes wrong. Everyone should have their own headlamp.',
+      'Do not rely on your phone flashlight. You may walk before sunrise or after dark if something goes wrong. Everyone should have their own headlamp.',
     ],
     items: [
       { id: 'elec.phone', label: 'Phone' },
@@ -258,7 +249,6 @@ export const sections = [
       { id: 'elec.cables', label: 'Charging cables' },
       { id: 'elec.adapter', label: 'Universal travel adapter' },
       { id: 'elec.headlamp', label: 'Headlamp, one per person' },
-      { id: 'elec.spare-batteries', label: 'Spare headlamp batteries' },
     ],
   },
 
@@ -284,33 +274,7 @@ export const sections = [
         id: 'ktm.permits',
         label: 'Start permits / trek registration if you can in Kathmandu',
       },
-      {
-        id: 'ktm.arrange-jeep',
-        label: 'Arrange Pokhara to Ghandruk jeep for the 28th',
-      },
       { id: 'ktm.charge', label: 'Charge everything' },
-    ],
-  },
-  {
-    id: 'join',
-    phase: 'prep',
-    title: '27 Sept, group joins',
-    notes: [
-      'The rest of the group lands Kathmandu in the afternoon. No extra Kathmandu hotel: go onto the night bus together.',
-    ],
-    items: [
-      {
-        id: 'join.land',
-        label: 'Remaining group lands Kathmandu in the afternoon',
-      },
-      {
-        id: 'join.meeting',
-        label: 'Meeting point, tickets and passports confirmed',
-      },
-      {
-        id: 'join.bus',
-        label: 'Whole group on the 27 Sept night bus to Pokhara',
-      },
     ],
   },
   {
@@ -336,7 +300,7 @@ export const sections = [
       { id: 'pre.charge', label: 'Power banks charged' },
       {
         id: 'pre.passports-permits',
-        label: 'Everyone’s passport and permit situation confirmed',
+        label: 'Everyone\'s passport and permit situation confirmed',
       },
     ],
   },
@@ -355,30 +319,11 @@ export const sections = [
     ],
   },
   {
-    id: 'jeep',
-    phase: 'prep',
-    title: 'Jeep to Ghandruk',
-    notes: [
-      'For 7-8 people, arrange this before the 28th. Target: Pokhara to Ghandruk. Don’t land in Pokhara and start hunting for a vehicle.',
-      'Don’t let the driver talk you into changing the plan because some other road is “better”.',
-    ],
-    items: [
-      { id: 'jeep.capacity', label: 'Vehicle capacity' },
-      { id: 'jeep.passengers', label: 'Number of passengers' },
-      { id: 'jeep.luggage', label: 'Luggage capacity' },
-      { id: 'jeep.price', label: 'Total price' },
-      { id: 'jeep.pickup-location', label: 'Pickup location' },
-      { id: 'jeep.pickup-time', label: 'Pickup time' },
-      { id: 'jeep.dropoff', label: 'Drop-off: Ghandruk' },
-      { id: 'jeep.road-charges', label: 'Road and parking charges included?' },
-    ],
-  },
-  {
     id: 'permits',
     phase: 'prep',
     title: 'Permits',
     notes: [
-      'You’ll generally need the Annapurna Conservation Area permit (ACAP) plus the trekking registration / TIMS arrangement that applies at the time. Start these in Kathmandu on the 26th if you can. Don’t leave them for Pokhara; you are not staying there.',
+      'You\'ll generally need the Annapurna Conservation Area permit (ACAP) plus the trekking registration / TIMS arrangement that applies at the time.',
     ],
     items: [
       { id: 'permits.acap', label: 'ACAP permit' },
@@ -392,7 +337,7 @@ export const sections = [
     phase: 'prep',
     title: 'Cash on the trail',
     notes: [
-      'ATMs become irrelevant once you’re deep into the trail. Don’t plan to withdraw money when you need it.',
+      'ATMs become irrelevant once you\'re deep into the trail. Do not plan to withdraw money when you need it.',
     ],
     items: [
       { id: 'cash.trek-npr', label: 'NPR for the whole trek plus emergency' },
@@ -469,9 +414,9 @@ export const sections = [
   {
     id: 'flexibility',
     phase: 'info',
-    title: 'Don’t chase the itinerary',
+    title: 'Do not chase the itinerary',
     notes: [
-      'The mountains don’t care about your schedule. If someone gets sick, the weather turns, a road is blocked, the group is exhausted, or the trail is bad, change the plan.',
+      'The mountains do not care about your schedule. If someone gets sick, the weather turns, a road is blocked, the group is exhausted, or the trail is bad, change the plan.',
       'The goal is not "we reach ABC on Day 5". The goal is "everyone reaches ABC safely".',
     ],
     items: [],
@@ -481,13 +426,13 @@ export const sections = [
     phase: 'info',
     title: 'Group rules',
     notes: [
-      'Start early: aim for 7–8 AM on regular days; earlier on October 2.',
+      'Start early: aim for 7-8 AM on regular days; earlier on October 2.',
       'The slowest person sets the pace. Nobody walks alone, especially above Deurali. Do not split without a plan.',
-      'Carry at least 1.5–2 L water per person; refill at lodges. Eat breakfast before walking; lunch at recommended lodges; carry snacks.',
-      'Stairs: small steps, steady pace. Don’t sprint uphill.',
+      'Carry at least 1.5-2 L water per person; refill at lodges. Eat breakfast before walking; lunch at recommended lodges; carry snacks.',
+      'Stairs: small steps, steady pace. Do not sprint uphill.',
       'If you feel sick, tell the guide immediately. Do not hide symptoms.',
       'Ask the guide every morning about rain, snow, trail conditions, and visibility.',
-      'Headlamp for October 2 — you may finish after dark. Keep rain gear and cold layers (gloves, beanie) accessible, not buried.',
+      'Headlamp for October 2. You may finish after dark. Keep rain gear and cold layers (gloves, beanie) accessible, not buried.',
       'Keep enough NPR for food, water, rooms, and emergencies.',
     ],
     items: [],
@@ -546,17 +491,17 @@ export const sections = [
       {
         headers: ['Day', 'Route', 'Net elev', 'Temp'],
         rows: [
-          ['Sep 28', 'Pokhara → Ghandruk', '+1,120 m road', 'Night ~10–13°C'],
-          ['Sep 29', 'Ghandruk → Chomrong', '+230 m', '18–24° / 10–13°'],
-          ['Sep 30', 'Chomrong → Dovan', '+430 m', '15–20° / 8–12°'],
-          ['Oct 1', 'Dovan → MBC', '+1,100 m', '5–10° / −5–2°'],
-          ['Oct 2', 'MBC → ABC → Dovan', '+430 m to ABC', '5–10°; coldest'],
-          ['Oct 3', 'Dovan → Pokhara', '−820 m walk', 'Warms to 25–30°'],
+          ['Sep 28', 'Pokhara → Ghandruk', '+1,120 m road', 'Night ~10-13°C'],
+          ['Sep 29', 'Ghandruk → Chomrong', '+230 m', '18-24° / 10-13°'],
+          ['Sep 30', 'Chomrong → Dovan', '+430 m', '15-20° / 8-12°'],
+          ['Oct 1', 'Dovan → MBC', '+1,100 m', '5-10° / -5-2°'],
+          ['Oct 2', 'MBC → ABC → Dovan', '+430 m to ABC', '5-10°; coldest'],
+          ['Oct 3', 'Dovan → Pokhara', '-820 m walk', 'Warms to 25-30°'],
         ],
       },
     ],
     notes: [
-      'Net elevation gain is not the same as total uphill climbing. Temps and rain % are planning estimates — check the forecast around Sep 23–25 and every morning on trail.',
+      'Net elevation gain is not the same as total uphill climbing. Temps and rain % are planning estimates. Check the forecast around Sep 23-25 and every morning on trail.',
     ],
     items: [],
   },
