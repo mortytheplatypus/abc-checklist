@@ -58,7 +58,7 @@ export const trekDays = [
       'Ghandruk → gradual climb → descent into valley → river crossing → long staircase climb → Chomrong ridge',
     terrain: [
       'Leave through village lanes and terraced farmland, then forest toward the Kimrung Khola valley.',
-      'Cross the river, then climb toward Chomrong — the stairs are where it gets tiring.',
+      'Cross the river, then climb toward Chomrong. The stairs are where it gets tiring.',
       'Chomrong sits on a ridge; major village stop for the night.',
     ],
     rests: [
@@ -93,7 +93,7 @@ export const trekDays = [
     terrain: [
       'Long stone staircase down from Chomrong, river bridge, then climb to Sinuwa.',
       'Dense bamboo and rhododendron forest; Bamboo is a natural lunch/rest point.',
-      'Continue along the Modi Khola valley to Dovan — transition into the Sanctuary trail.',
+      'Continue along the Modi Khola valley to Dovan. Transition into the Sanctuary trail.',
     ],
     rests: [
       { place: 'Chomrong', plan: 'Breakfast; fill bottles before leaving.' },
@@ -106,7 +106,7 @@ export const trekDays = [
       { label: 'Night', value: '8–12°C' },
       { label: 'Rain chance', value: '~20–40%' },
     ],
-    tip: 'Bamboo is your main break. Do not rush. Forest shade can feel cooler; trail may be damp after rain. Treat water — do not assume streams are safe.',
+    tip: 'Bamboo is your main break. Do not rush. Forest shade can feel cooler; trail may be damp after rain. Treat water. Do not assume streams are safe.',
   },
   {
     id: 'day4',
@@ -127,7 +127,7 @@ export const trekDays = [
       'Dovan → forest gorge → Himalaya → Deurali → thinning forest → open valley → MBC',
     terrain: [
       'Follow Modi Khola upstream through forest and rocky trail.',
-      'Himalaya for tea/rest; Deurali where forest thins — lunch before the open high section.',
+      'Himalaya for tea/rest; Deurali where forest thins. Lunch before the open high section.',
       'Valley opens and rockier to Machhapuchhre Base Camp (~3,700 m).',
     ],
     rests: [
@@ -158,7 +158,7 @@ export const trekDays = [
     summary: [
       { label: 'Elev', value: 'MBC ~3,700 m → ABC ~4,130 m → Dovan ~2,600 m' },
       { label: 'Net elev', value: '+430 m to ABC; then long descent' },
-      { label: 'Next ↑', value: '— (summit day)' },
+      { label: 'Next ↑', value: '- (summit day)' },
       { label: 'Temp', value: 'Day 5–10°C; coldest / highest day' },
     ],
     terrainPath:
@@ -166,7 +166,7 @@ export const trekDays = [
     terrain: [
       'Start early from MBC (sunrise or before, per guide and weather).',
       'Open, exposed trail: rocky ground, uneven stones; possible snow or ice.',
-      'Steady climb to ABC amphitheatre — photos, rest, then same route back and long descent to Dovan.',
+      'Steady climb to ABC amphitheatre. Photos, rest, then same route back and long descent to Dovan.',
     ],
     rests: [
       { place: 'MBC', plan: 'Breakfast and fill water before leaving; main lunch/recovery on return.' },
@@ -195,13 +195,13 @@ export const trekDays = [
     summary: [
       { label: 'Elev', value: '~2,600 m → Jhinu ~1,780 m → Pokhara ~820 m' },
       { label: 'Net elev', value: '−820 m walk + jeep' },
-      { label: 'Next ↑', value: '—' },
+      { label: 'Next ↑', value: '-' },
       { label: 'Temp', value: 'Warms to ~25–30°C in Pokhara' },
     ],
     terrainPath:
       'Dovan → forest descent → Bamboo → Sinuwa → Chomrong junction → Jhinu Danda → steep descent to river → hot springs → jeep',
     terrain: [
-      'Mostly downhill through forest — do not underestimate the stairs.',
+      'Mostly downhill through forest. Do not underestimate the stairs.',
       'Pass Bamboo and Sinuwa, then toward Jhinu Danda and down to the river hot springs.',
       'Soak, then jeep back to Pokhara.',
     ],
@@ -218,6 +218,6 @@ export const trekDays = [
       { label: 'Pokhara daytime', value: '25–30°C' },
       { label: 'Rain chance', value: '~15–35%' },
     ],
-    tip: 'Warmer as you descend. Hot springs are the reward — do not soak too long if dehydrated or exhausted. Drink and eat before the jeep.',
+    tip: 'Warmer as you descend. Hot springs are the reward. Do not soak too long if dehydrated or exhausted. Drink and eat before the jeep.',
   },
 ];

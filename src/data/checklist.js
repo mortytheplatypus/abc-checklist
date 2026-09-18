@@ -368,6 +368,34 @@ export const sections = [
 
   // ---------------------------------------------------------------- INFO
   {
+    id: 'routine',
+    phase: 'info',
+    title: 'Daily routine',
+    notes: [
+      '6:00 to 6:30 wake up. 6:30 to 7:00 breakfast. 7:00 to 8:00 start walking.',
+      'Short break every 60 to 90 minutes. Lunch around midday.',
+      'Evening: eat, shower if possible, charge devices, prepare the backpack, sleep early.',
+    ],
+    items: [],
+  },
+  {
+    id: 'group',
+    phase: 'info',
+    title: 'Rules & mental map',
+    notes: [
+      'Ridge → valleys → forest stairs → alpine basin → ABC → same way back → hot springs → Pokhara.',
+      'Hard part: stairs + altitude. Hardest day: Oct 2. ABC early, lunch at MBC, descend to Dovan.',
+      'Slowest person sets the pace. Nobody walks alone above Deurali.',
+      'Sick? Tell the guide immediately. Descend. Do not push through.',
+      'Carry 1.5-2 L water each; refill at lodges. Treat water. Do not assume streams are safe.',
+      'Eat breakfast before walking. Lunch at recommended lodges. Carry snacks.',
+      'Stairs: small steps, steady pace. Do not sprint uphill.',
+      'Start early (earlier on Oct 2). Headlamp, rain gear, and warm layers kept accessible.',
+      'Keep enough NPR for food, rooms, and emergencies.',
+    ],
+    items: [],
+  },
+  {
     id: 'altitude',
     phase: 'info',
     title: 'Altitude illness',
@@ -412,67 +440,6 @@ export const sections = [
     items: [],
   },
   {
-    id: 'flexibility',
-    phase: 'info',
-    title: 'Do not chase the itinerary',
-    notes: [
-      'The mountains do not care about your schedule. If someone gets sick, the weather turns, a road is blocked, the group is exhausted, or the trail is bad, change the plan.',
-      'The goal is not "we reach ABC on Day 5". The goal is "everyone reaches ABC safely".',
-    ],
-    items: [],
-  },
-  {
-    id: 'group',
-    phase: 'info',
-    title: 'Group rules',
-    notes: [
-      'Start early: aim for 7-8 AM on regular days; earlier on October 2.',
-      'The slowest person sets the pace. Nobody walks alone, especially above Deurali. Do not split without a plan.',
-      'Carry at least 1.5-2 L water per person; refill at lodges. Eat breakfast before walking; lunch at recommended lodges; carry snacks.',
-      'Stairs: small steps, steady pace. Do not sprint uphill.',
-      'If you feel sick, tell the guide immediately. Do not hide symptoms.',
-      'Ask the guide every morning about rain, snow, trail conditions, and visibility.',
-      'Headlamp for October 2. You may finish after dark. Keep rain gear and cold layers (gloves, beanie) accessible, not buried.',
-      'Keep enough NPR for food, water, rooms, and emergencies.',
-    ],
-    items: [],
-  },
-  {
-    id: 'routine',
-    phase: 'info',
-    title: 'Daily routine',
-    notes: [
-      '6:00 to 6:30 wake up. 6:30 to 7:00 breakfast. 7:00 to 8:00 start walking.',
-      'Short break every 60 to 90 minutes. Lunch around midday.',
-      'Reach the destination early enough to actually get a room.',
-      'Evening: eat, shower if possible, charge devices, prepare the backpack, sleep early.',
-      'Don’t turn the teahouse into a late-night hangout. Your next morning matters more.',
-    ],
-    items: [],
-  },
-  {
-    id: 'teahouse',
-    phase: 'info',
-    title: 'Teahouse expectations',
-    notes: [
-      'Basic rooms, often shared bathrooms, cold rooms higher up. Hot showers, charging and Wi-Fi are sometimes available and usually cost extra.',
-      'At higher elevations the dining room is often the warmest place, because that’s where the stove is.',
-    ],
-    items: [],
-  },
-  {
-    id: 'mental-map',
-    phase: 'info',
-    title: 'Final mental map',
-    notes: [
-      'You are not walking a flat road.',
-      'Village ridge → river valleys → forest stairs → high alpine basin → ABC → retrace your steps → hot springs → Pokhara.',
-      'Main physical challenge: stairs plus altitude. Main planning challenge: October 2 — reach ABC early, return to MBC, eat, then descend to Dovan without rushing.',
-      'Prepare for warm, wet lower trails and freezing high-altitude nights.',
-    ],
-    items: [],
-  },
-  {
     id: 'elev-temp',
     phase: 'info',
     title: 'Elevation & temperature',
@@ -485,7 +452,7 @@ export const sections = [
           ['Dovan', '~2,600 m', '+600 m'],
           ['Deurali', '~3,200 m', '+500 m'],
           ['MBC', '~3,700 m', '+430 m'],
-          ['ABC', '~4,130 m', '—'],
+          ['ABC', '~4,130 m', '-'],
         ],
       },
       {
@@ -499,9 +466,6 @@ export const sections = [
           ['Oct 3', 'Dovan → Pokhara', '-820 m walk', 'Warms to 25-30°'],
         ],
       },
-    ],
-    notes: [
-      'Net elevation gain is not the same as total uphill climbing. Temps and rain % are planning estimates. Check the forecast around Sep 23-25 and every morning on trail.',
     ],
     items: [],
   },
