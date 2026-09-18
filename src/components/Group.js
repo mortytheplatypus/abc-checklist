@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { Row } from './Row';
 
 export function Group({ section, hideDone, isChecked, onToggle, onResetSection }) {
-  const [showNotes, setShowNotes] = useState(false);
-
   const notes = section.notes || [];
   const tables = section.tables || (section.table ? [section.table] : null);
   const total = section.items.length;
@@ -14,8 +11,6 @@ export function Group({ section, hideDone, isChecked, onToggle, onResetSection }
     : section.items;
 
   if (hideDone && complete) return null;
-
-  const showNotesBlock = (showNotes || total === 0) && notes.length > 0;
 
   return (
     <section className={section.urgent ? 'group urgent' : 'group'}>
@@ -35,17 +30,6 @@ export function Group({ section, hideDone, isChecked, onToggle, onResetSection }
             onClick={() => onResetSection(section.id)}
           >
             New day
-          </button>
-        )}
-
-        {notes.length > 0 && total > 0 && (
-          <button
-            type="button"
-            className={showNotes ? 'chip chip-on' : 'chip'}
-            aria-expanded={showNotes}
-            onClick={() => setShowNotes((v) => !v)}
-          >
-            Tips
           </button>
         )}
       </div>
@@ -74,7 +58,7 @@ export function Group({ section, hideDone, isChecked, onToggle, onResetSection }
           </div>
         ))}
 
-      {showNotesBlock && (
+      {notes.length > 0 && (
         <ul className="notes">
           {notes.map((note, i) => (
             <li key={i}>{note}</li>

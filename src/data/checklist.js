@@ -23,22 +23,14 @@ export const sections = [
       'Keep digital and paper copies somewhere separate from the originals.',
     ],
     items: [
-      {
-        id: 'docs.passport',
-        label: 'Passport with enough validity and blank pages',
-      },
-      {
-        id: 'docs.visa',
-        label: 'Nepal visa / visa-on-arrival rule checked for BD passports',
-      },
-      { id: 'docs.flights', label: 'Flight tickets, Dhaka to Kathmandu (26 and 27 Sept)' },
+      { id: 'docs.flights', label: 'Flight tickets, Dhaka to Kathmandu' },
       {
         id: 'docs.copies',
         label: 'Copies of passport, tickets, bookings, emergency contacts',
       },
       {
         id: 'docs.itinerary-home',
-        label: 'Itinerary and everyone’s numbers left with someone at home',
+        label: 'Itinerary and everyone\'s numbers left with someone at home',
       },
     ],
   },
@@ -46,60 +38,24 @@ export const sections = [
     id: 'money',
     phase: 'prep',
     title: 'Money',
-    notes: [
-      'Don’t depend entirely on cards.',
-      'For a group of 7-8, one person should keep a shared expense ledger. Otherwise you’ll spend half the trip working out who paid for which jeep.',
-    ],
+    notes: [],
     items: [
       { id: 'money.npr', label: 'NPR cash for the trek' },
       { id: 'money.card', label: 'International card for Kathmandu / Pokhara' },
       { id: 'money.usd', label: 'Emergency USD' },
-      { id: 'money.ledger', label: 'One person assigned to the expense ledger' },
     ],
   },
   {
     id: 'bookings',
     phase: 'prep',
     title: 'Book in advance',
-    notes: [
-      'Two people land 26 Sept. The rest land 27 Sept afternoon. The advance party buys the 27th-night bus tickets in Kathmandu. Don’t wait until the full group arrives.',
-      'You are not staying in a Pokhara hotel. 28 Sept is a look at the lake, then direct to Ghandruk to rest. Trek starts 29 Sept from Ghandruk.',
-      'The three things not to leave late: the Kathmandu hotel for two on 26 Sept, the Pokhara to Ghandruk jeep for the 28th, and permits.',
-    ],
+    notes: [],
     items: [
-      {
-        id: 'book.flights',
-        label: 'Dhaka to Kathmandu flights (two on 26 Sept, rest on 27 Sept)',
-      },
-      {
-        id: 'book.ktm-hotel-advance',
-        label: 'Kathmandu hotel for two, 26 Sept night',
-      },
-      {
-        id: 'book.ktm-pokhara-bus',
-        label: 'Kathmandu to Pokhara night bus, 27 Sept, whole group',
-      },
+      { id: 'book.flights', label: 'Dhaka to Kathmandu flights' },
+      { id: 'book.ktm-hotel-advance', label: 'Kathmandu hotel for two, 26 Sept night' },
+      { id: 'book.ktm-pokhara-bus', label: 'Kathmandu to Pokhara night bus, 27 Sept' },
       { id: 'bus.departure', label: 'Bus: departure location confirmed' },
-      { id: 'bus.pickup-time', label: 'Bus: pickup time confirmed' },
-      { id: 'bus.luggage', label: 'Bus: luggage allowance confirmed' },
-      { id: 'bus.operator-phone', label: 'Bus: operator’s phone number saved' },
-      {
-        id: 'book.ghandruk-jeep',
-        label: 'Pokhara to Ghandruk jeep arranged for 28 Sept',
-      },
-      { id: 'book.ktm-return-hotel', label: 'Return Kathmandu hotel' },
-    ],
-  },
-  {
-    id: 'get-ready',
-    phase: 'prep',
-    title: 'Get yourself ready',
-    notes: [
-      'Do not arrive in Nepal with brand-new boots. Wear them regularly, walk long distances and stairs, check your heel isn’t slipping, and find the pressure points before the trail does.',
-    ],
-    items: [
-      { id: 'book.boots-broken-in', label: 'Trekking boots broken in' },
-      { id: 'book.basic-equipment', label: 'Basic trekking equipment sorted' },
+      { id: 'bus.operator-phone', label: 'Bus: operator phone number saved' },
     ],
   },
 
@@ -108,17 +64,14 @@ export const sections = [
     id: 'clothing-upper',
     phase: 'pack',
     title: 'Upper body',
-    notes: ['Don’t overpack. Layers beat bulk.'],
+    notes: ['Do not overpack. Layers beat bulk.'],
     items: [
       { id: 'gear.tshirts', label: '2-3 quick-dry T-shirts' },
       { id: 'gear.thermals-top', label: '1-2 thermal / base layers' },
       { id: 'gear.fleece', label: 'Fleece or mid-layer' },
       { id: 'gear.down-jacket', label: 'Down jacket' },
       { id: 'gear.rain-jacket', label: 'Waterproof rain jacket' },
-      {
-        id: 'gear.windbreaker',
-        label: 'Windbreaker, if the rain jacket is a poor wind shell',
-      },
+      { id: 'gear.windbreaker', label: 'Windbreaker, if needed' },
     ],
   },
   {
@@ -129,7 +82,7 @@ export const sections = [
     items: [
       { id: 'gear.trek-pants', label: '2 trekking pants' },
       { id: 'gear.thermal-bottom', label: '1 thermal bottom' },
-      { id: 'gear.underwear', label: 'Comfortable underwear' },
+      { id: 'gear.underwear', label: 'Comfortable underwears' },
       { id: 'gear.sleep-clothes', label: 'Warm sleeping clothes' },
     ],
   },
@@ -151,9 +104,7 @@ export const sections = [
     id: 'footwear',
     phase: 'pack',
     title: 'Footwear',
-    notes: [
-      'Carry blister treatment rather than assuming you won\'t need it.',
-    ],
+    notes: [],
     items: [
       { id: 'gear.boots', label: 'Trekking boots, already broken in' },
       { id: 'gear.blister-treatment', label: 'Blister treatment' },
@@ -209,9 +160,7 @@ export const sections = [
     id: 'medicine',
     phase: 'pack',
     title: 'First aid',
-    notes: [
-      'One small shared group kit beats eight full individual kits. Personal prescriptions stay personal.',
-    ],
+    notes: [],
     items: [
       { id: 'med.bandages', label: 'Bandages' },
       { id: 'med.blister-patches', label: 'Blister patches' },
@@ -219,8 +168,7 @@ export const sections = [
       { id: 'med.painkiller', label: 'Painkiller' },
       { id: 'med.stomach', label: 'Stomach / diarrhea medicine' },
       { id: 'med.ors', label: 'ORS / electrolytes' },
-      { id: 'med.motion', label: 'Motion-sickness medication if anyone needs it' },
-      { id: 'med.prescription', label: 'Personal prescription medicines' },
+      { id: 'med.cold-fever', label: 'Fever/cold medicines' },
     ],
   },
   {
@@ -240,77 +188,40 @@ export const sections = [
     id: 'electronics',
     phase: 'pack',
     title: 'Electronics',
-    notes: [
-      'Do not rely on your phone flashlight. You may walk before sunrise or after dark if something goes wrong. Everyone should have their own headlamp.',
-    ],
+    notes: [],
     items: [
       { id: 'elec.phone', label: 'Phone' },
       { id: 'elec.power-bank', label: 'Power bank' },
       { id: 'elec.cables', label: 'Charging cables' },
       { id: 'elec.adapter', label: 'Universal travel adapter' },
-      { id: 'elec.headlamp', label: 'Headlamp, one per person' },
     ],
   },
 
   // ---------------------------------------------------------- LOGISTICS (Prep)
   {
-    id: 'kathmandu',
-    phase: 'prep',
-    title: '26 Sept, Kathmandu (two people)',
-    notes: [
-      'This is not a sightseeing day. The two who land early do the group’s errands so the 27th can be a clean join-and-go.',
-      'You planned to rent a down jacket, sleeping bag and trekking poles. Actually inspect rental gear. Don’t just take a bag because the shop says it suits ABC.',
-    ],
-    items: [
-      { id: 'ktm.hotel', label: 'Check into hotel (two people, one night)' },
-      { id: 'ktm.withdraw-npr', label: 'Exchange currency / withdraw enough NPR' },
-      { id: 'ktm.rent-gear', label: 'Rent trekking equipment, then inspect it' },
-      { id: 'ktm.supplies', label: 'Buy remaining supplies' },
-      {
-        id: 'ktm.bus-tickets',
-        label: 'Buy night-bus tickets for the whole group, 27 Sept',
-      },
-      {
-        id: 'ktm.permits',
-        label: 'Start permits / trek registration if you can in Kathmandu',
-      },
-      { id: 'ktm.charge', label: 'Charge everything' },
-    ],
-  },
-  {
     id: 'pre-trek',
     phase: 'prep',
-    title: '28 Sept, Pokhara to Ghandruk',
+    title: 'Pre-trek',
     notes: [
-      'You are not staying in a Pokhara hotel. Mild lake look, then direct to Ghandruk. Rest. Trek starts 29 Sept from Ghandruk.',
+      '26 Sept: the two who land early do the group errands in Kathmandu. Not a sightseeing day. Inspect rental gear before taking it.',
+      '28 Sept: no Pokhara hotel. Mild lake look, then jeep to Ghandruk. Rest. Trek starts 29 Sept from Ghandruk.',
     ],
     items: [
-      { id: 'day28.arrive', label: 'Arrive Pokhara (morning, after the night bus)' },
-      {
-        id: 'day28.lake',
-        label: 'Phewa Lake, mild sightseeing, not a full day',
-      },
-      { id: 'day28.jeep', label: 'Jeep to Ghandruk' },
-      { id: 'day28.teahouse', label: 'Check into a Ghandruk teahouse' },
-      { id: 'day28.rest', label: 'Rest. Trek starts 29 Sept from Ghandruk' },
+      { id: 'ktm.withdraw-npr', label: 'Exchange currency / withdraw enough NPR' },
+      { id: 'ktm.rent-gear', label: 'Rent trekking equipment, then inspect it' },
+      { id: 'ktm.bus-tickets', label: 'Buy night-bus tickets for 27 Sept' },
       { id: 'pre.npr', label: 'NPR for the whole trek confirmed' },
       { id: 'pre.snacks', label: 'Snacks bought' },
       { id: 'pre.water-electrolytes', label: 'Water and electrolytes bought' },
       { id: 'pre.weather', label: 'Weather forecast checked' },
       { id: 'pre.charge', label: 'Power banks charged' },
-      {
-        id: 'pre.passports-permits',
-        label: 'Everyone\'s passport and permit situation confirmed',
-      },
     ],
   },
   {
     id: 'maps',
     phase: 'prep',
     title: 'Offline maps',
-    notes: [
-      'Do this in Kathmandu on the 26th, or on the 28th before the jeep. You are not staying in Pokhara. Don’t assume you’ll have reliable mobile data.',
-    ],
+    notes: [],
     items: [
       { id: 'maps.offline-route', label: 'Offline map of the entire ABC route' },
       { id: 'maps.teahouses', label: 'Teahouse destinations saved' },
@@ -336,9 +247,7 @@ export const sections = [
     id: 'cash',
     phase: 'prep',
     title: 'Cash on the trail',
-    notes: [
-      'ATMs become irrelevant once you\'re deep into the trail. Do not plan to withdraw money when you need it.',
-    ],
+    notes: [],
     items: [
       { id: 'cash.trek-npr', label: 'NPR for the whole trek plus emergency' },
       { id: 'cash.separated', label: 'Emergency cash kept separate from wallet' },
