@@ -19,12 +19,26 @@ export function DayGuide({ day, defaultOpen = false }) {
         </div>
         <div className="day-guide-meta">
           <span className="day-tag">{day.tag}</span>
-          <span className="day-sleep">Sleep: {day.sleep}</span>
+          <span className="day-sleep">
+            Sleep: {day.sleep}
+            {day.lodge ? ` · ${day.lodge.name}` : ''}
+          </span>
           <span className="day-chevron" aria-hidden="true">
             {open ? '−' : '+'}
           </span>
         </div>
       </button>
+
+      {day.lodge && (
+        <a
+          className="day-lodge"
+          href={day.lodge.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Booked: {day.lodge.name}
+        </a>
+      )}
 
       {open && (
         <div className="day-guide-body">

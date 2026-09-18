@@ -1,6 +1,6 @@
 /**
  * Day-by-day ABC field guide for the Trek tab.
- * Distilled from ignore/final.md (Sep 28 – Oct 3, 2026).
+ * Distilled from ignore/final.md (Sep 28 - Oct 3, 2026).
  */
 
 export const trekDays = [
@@ -11,13 +11,17 @@ export const trekDays = [
     route: 'Pokhara → Ghandruk',
     tag: 'Jeep day',
     sleep: 'Ghandruk',
+    lodge: {
+      name: "Trekkers Sanctuary",
+      url: 'https://maps.app.goo.gl/DYqUWyqy4M9a9VrQ6',
+    },
     stats: 'Jeep • Sleep Ghandruk ~1,940 m',
     elevNote: 'Net by road ≈ +1,120 m. Walking gain: minimal.',
     summary: [
       { label: 'Sleep', value: 'Ghandruk ~1,940 m' },
       { label: 'Net elev', value: '+1,120 m by road; minimal walking' },
       { label: 'Next ↑', value: '+230 m to Chomrong' },
-      { label: 'Temp', value: 'Valley warm; night ~10–13°C' },
+      { label: 'Temp', value: 'Valley warm; night ~10-13°C' },
     ],
     terrainPath:
       'Pokhara → winding mountain road → terraced hills → Gurung village → stone paths',
@@ -32,10 +36,10 @@ export const trekDays = [
       { place: 'Ghandruk', plan: 'Check in, eat, rest, explore the village lightly.' },
     ],
     weather: [
-      { label: 'Pokhara daytime', value: '25–30°C' },
-      { label: 'Ghandruk daytime', value: '18–24°C' },
-      { label: 'Ghandruk night', value: '10–13°C' },
-      { label: 'Rain chance', value: '~20–40%' },
+      { label: 'Pokhara daytime', value: '25-30°C' },
+      { label: 'Ghandruk daytime', value: '18-24°C' },
+      { label: 'Ghandruk night', value: '10-13°C' },
+      { label: 'Rain chance', value: '~20-40%' },
     ],
     tip: 'Do not spend the entire evening sightseeing. Sleep properly. The first real walking day starts tomorrow.',
   },
@@ -46,13 +50,17 @@ export const trekDays = [
     route: 'Ghandruk → Chomrong',
     tag: 'Moderate',
     sleep: 'Chomrong',
-    stats: '~9–10 km • 4–6 h • Net +230 m',
-    elevNote: 'Total uphill roughly 500–700 m. Net gain is small but you climb and descend a lot.',
+    lodge: {
+      name: 'Excellent View',
+      url: 'https://maps.app.goo.gl/EGPaqkzyWADPbXFY8',
+    },
+    stats: '~9-10 km • 4-6 h • Net +230 m',
+    elevNote: 'Total uphill roughly 500-700 m. Net gain is small but you climb and descend a lot.',
     summary: [
       { label: 'Elev', value: '~1,940 m → ~2,170 m' },
-      { label: 'Net elev', value: '+230 m (total ↑ ~500–700 m)' },
+      { label: 'Net elev', value: '+230 m (total ↑ ~500-700 m)' },
       { label: 'Next ↑', value: '+430 m to Dovan' },
-      { label: 'Temp', value: 'Day 18–24°C · Night 10–13°C' },
+      { label: 'Temp', value: 'Day 18-24°C · Night 10-13°C' },
     ],
     terrainPath:
       'Ghandruk → gradual climb → descent into valley → river crossing → long staircase climb → Chomrong ridge',
@@ -67,9 +75,9 @@ export const trekDays = [
       { place: 'Chomrong', plan: 'Best lunch if you finish the climb first. Check in and rest.' },
     ],
     weather: [
-      { label: 'Daytime', value: '18–24°C' },
-      { label: 'Night', value: '10–13°C' },
-      { label: 'Rain chance', value: '~20–40%' },
+      { label: 'Daytime', value: '18-24°C' },
+      { label: 'Night', value: '10-13°C' },
+      { label: 'Rain chance', value: '~20-40%' },
     ],
     tip: 'Take your time on the stairs. Eat a proper lunch at Chomrong, refill water, and sleep early. A light rain jacket is useful.',
   },
@@ -80,13 +88,17 @@ export const trekDays = [
     route: 'Chomrong → Dovan',
     tag: 'Long uphill / downhill',
     sleep: 'Dovan',
-    stats: '~10–12 km • 5–7 h • Net +430 m',
-    elevNote: 'Total uphill roughly 700–900 m. Stairs tire legs more than the net numbers suggest.',
+    lodge: {
+      name: 'Dovan Guest House',
+      url: 'https://maps.app.goo.gl/fLCgbgakwSfZgdQS8',
+    },
+    stats: '~10-12 km • 5-7 h • Net +430 m',
+    elevNote: 'Total uphill roughly 700-900 m. Stairs tire legs more than the net numbers suggest.',
     summary: [
       { label: 'Elev', value: '~2,170 m → ~2,600 m' },
-      { label: 'Net elev', value: '+430 m (total ↑ ~700–900 m)' },
+      { label: 'Net elev', value: '+430 m (total ↑ ~700-900 m)' },
       { label: 'Next ↑', value: '+600 m to Deurali' },
-      { label: 'Temp', value: 'Day 15–20°C · Night 8–12°C' },
+      { label: 'Temp', value: 'Day 15-20°C · Night 8-12°C' },
     ],
     terrainPath:
       'Chomrong ridge → long descent → river crossing → Sinuwa climb → forest trail → Bamboo → Dovan',
@@ -102,9 +114,9 @@ export const trekDays = [
       { place: 'Dovan', plan: 'Check in, dinner, rest.' },
     ],
     weather: [
-      { label: 'Daytime', value: '15–20°C' },
-      { label: 'Night', value: '8–12°C' },
-      { label: 'Rain chance', value: '~20–40%' },
+      { label: 'Daytime', value: '15-20°C' },
+      { label: 'Night', value: '8-12°C' },
+      { label: 'Rain chance', value: '~20-40%' },
     ],
     tip: 'Bamboo is your main break. Do not rush. Forest shade can feel cooler; trail may be damp after rain. Treat water. Do not assume streams are safe.',
   },
@@ -115,13 +127,17 @@ export const trekDays = [
     route: 'Dovan → MBC',
     tag: 'Altitude day',
     sleep: 'MBC',
-    stats: '~13–15 km • 6–8 h • Net +1,100 m',
-    elevNote: 'Start ~2,600 m → MBC ~3,700 m. Total uphill roughly 1,100–1,300 m.',
+    lodge: {
+      name: 'Machhapuchhre Guest House',
+      url: 'https://maps.app.goo.gl/F43HLd2brthMCro8A',
+    },
+    stats: '~13-15 km • 6-8 h • Net +1,100 m',
+    elevNote: 'Start ~2,600 m → MBC ~3,700 m. Total uphill roughly 1,100-1,300 m.',
     summary: [
       { label: 'Elev', value: '~2,600 m → Deurali ~3,200 m → MBC ~3,700 m' },
       { label: 'Net elev', value: '+1,100 m (biggest gain)' },
       { label: 'Next ↑', value: '+430 m to ABC' },
-      { label: 'Temp', value: 'MBC day 5–10°C · Night −5 to 2°C' },
+      { label: 'Temp', value: 'MBC day 5-10°C · Night −5 to 2°C' },
     ],
     terrainPath:
       'Dovan → forest gorge → Himalaya → Deurali → thinning forest → open valley → MBC',
@@ -136,11 +152,11 @@ export const trekDays = [
       { place: 'MBC', plan: 'Check in, hydrate, dinner, sleep.' },
     ],
     weather: [
-      { label: 'Dovan daytime', value: '15–20°C' },
-      { label: 'Deurali daytime', value: '10–15°C' },
-      { label: 'MBC daytime', value: '5–10°C' },
+      { label: 'Dovan daytime', value: '15-20°C' },
+      { label: 'Deurali daytime', value: '10-15°C' },
+      { label: 'MBC daytime', value: '5-10°C' },
       { label: 'MBC night', value: '−5 to 2°C' },
-      { label: 'Rain / snow', value: '~10–30%' },
+      { label: 'Rain / snow', value: '~10-30%' },
     ],
     tip: 'Slow day. Start early, steady pace, break before exhaustion. Warm layers, gloves, sleeping insulation. Guide should assess everyone before committing to ABC tomorrow.',
   },
@@ -151,15 +167,19 @@ export const trekDays = [
     route: 'MBC → ABC → MBC → Dovan',
     tag: 'Highest point',
     sleep: 'Dovan',
+    lodge: {
+      name: 'Dovan Guest House',
+      url: 'https://maps.app.goo.gl/fLCgbgakwSfZgdQS8',
+    },
     urgent: true,
-    stats: '~18–22 km • 8–11 h • Summit day',
+    stats: '~18-22 km • 8-11 h • Summit day',
     elevNote:
-      'MBC ~3,700 m → ABC ~4,130 m (+430 m). Total uphill ~600–900 m; descent ~1,500 m to Dovan.',
+      'MBC ~3,700 m → ABC ~4,130 m (+430 m). Total uphill ~600-900 m; descent ~1,500 m to Dovan.',
     summary: [
       { label: 'Elev', value: 'MBC ~3,700 m → ABC ~4,130 m → Dovan ~2,600 m' },
       { label: 'Net elev', value: '+430 m to ABC; then long descent' },
       { label: 'Next ↑', value: '- (summit day)' },
-      { label: 'Temp', value: 'Day 5–10°C; coldest / highest day' },
+      { label: 'Temp', value: 'Day 5-10°C; coldest / highest day' },
     ],
     terrainPath:
       'MBC → open alpine valley → rocky/moraine trail → ABC → same route back → Deurali → Himalaya → Dovan',
@@ -175,9 +195,9 @@ export const trekDays = [
       { place: 'Dovan', plan: 'Dinner and overnight rest.' },
     ],
     weather: [
-      { label: 'MBC / ABC daytime', value: '5–10°C' },
+      { label: 'MBC / ABC daytime', value: '5-10°C' },
       { label: 'Night (if high)', value: '−5 to 2°C' },
-      { label: 'Rain / snow', value: '~10–30%' },
+      { label: 'Rain / snow', value: '~10-30%' },
     ],
     tip: 'Carry water, snacks, gloves, warm layer, rain gear, sunglasses, headlamp. Early morning can be freezing.',
     critical:
@@ -190,13 +210,13 @@ export const trekDays = [
     route: 'Dovan → Jhinu → hot springs → Pokhara',
     tag: 'Descent + recovery',
     sleep: 'Pokhara',
-    stats: '~12–16 km walk + jeep • 5–7 h walking',
-    elevNote: 'Dovan ~2,600 m → Jhinu ~1,780 m (net −820 m). Some uphill ~300–500 m. Jeep to Pokhara ~820 m.',
+    stats: '~12-16 km walk + jeep • 5-7 h walking',
+    elevNote: 'Dovan ~2,600 m → Jhinu ~1,780 m (net −820 m). Some uphill ~300-500 m. Jeep to Pokhara ~820 m.',
     summary: [
       { label: 'Elev', value: '~2,600 m → Jhinu ~1,780 m → Pokhara ~820 m' },
       { label: 'Net elev', value: '−820 m walk + jeep' },
       { label: 'Next ↑', value: '-' },
-      { label: 'Temp', value: 'Warms to ~25–30°C in Pokhara' },
+      { label: 'Temp', value: 'Warms to ~25-30°C in Pokhara' },
     ],
     terrainPath:
       'Dovan → forest descent → Bamboo → Sinuwa → Chomrong junction → Jhinu Danda → steep descent to river → hot springs → jeep',
@@ -213,10 +233,10 @@ export const trekDays = [
       { place: 'Pokhara', plan: 'Dinner and proper sleep.' },
     ],
     weather: [
-      { label: 'Dovan daytime', value: '15–20°C' },
-      { label: 'Jhinu daytime', value: '18–24°C' },
-      { label: 'Pokhara daytime', value: '25–30°C' },
-      { label: 'Rain chance', value: '~15–35%' },
+      { label: 'Dovan daytime', value: '15-20°C' },
+      { label: 'Jhinu daytime', value: '18-24°C' },
+      { label: 'Pokhara daytime', value: '25-30°C' },
+      { label: 'Rain chance', value: '~15-35%' },
     ],
     tip: 'Warmer as you descend. Hot springs are the reward. Do not soak too long if dehydrated or exhausted. Drink and eat before the jeep.',
   },
