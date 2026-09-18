@@ -202,10 +202,7 @@ export const sections = [
     id: 'pre-trek',
     phase: 'prep',
     title: 'Pre-trek',
-    notes: [
-      '26 Sept: the two who land early do the group errands in Kathmandu. Not a sightseeing day. Inspect rental gear before taking it.',
-      '28 Sept: no Pokhara hotel. Mild lake look, then jeep to Ghandruk. Rest. Trek starts 29 Sept from Ghandruk.',
-    ],
+    notes: [],
     items: [
       { id: 'ktm.withdraw-npr', label: 'Exchange currency / withdraw enough NPR' },
       { id: 'ktm.rent-gear', label: 'Rent trekking equipment, then inspect it' },
